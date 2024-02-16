@@ -4,7 +4,7 @@ import org.avengers.common.*
 import org.avengers.golang.*
   
 def call(String){
-  PublishDependencyCheckReport = new PublishDependencyCheckReport()
+  publishdependencycheckReport = new PublishDependencyCheckReport()
   gitCheckoutPrivate = new GitCheckoutPrivate()
   
 }
