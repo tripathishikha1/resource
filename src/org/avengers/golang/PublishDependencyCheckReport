@@ -1,1 +1,16 @@
+package org.avengers.golang
 
+def call() {      
+        stage('Publish Dependency Check Report') {
+            steps {
+                publishHTML(target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: false,
+                    keepAll: true,
+                    reportDir: '',
+                    reportFiles: 'dep-check.html',
+                    reportName: 'Dependency Check Report'
+                ])
+            }
+        }
+}
